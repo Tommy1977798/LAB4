@@ -25,7 +25,7 @@ $user = new User();
         <a href="index.php">main page</a>
         <a href="cart.php">cart</a>
         <?php if(isset($_SESSION['user_id'])): ?>
-        <a href="orders.php">my order</a>
+        <a href="order.php">my order</a>
         <?php if($user->isAdmin($_SESSION['user_id'])): ?>
             <a href="add_guitar.php">add guitar(Administrater only)</a>
         <?php endif; ?>
